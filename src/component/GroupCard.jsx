@@ -1,16 +1,14 @@
-import "./style/groupCard.css";
-const GroupCard = () => {
+/* eslint-disable react/prop-types */
+import './style/groupCard.css'
+const GroupCard = ({ group }) => {
+  // console.log(group)
   return (
     <div className="card">
-      <img src="img_avatar.png" alt="Avatar" style="width:100%" />
-      <div className="container">
-        <h4>
-          <b>John Doe</b>
-        </h4>
-        <p>Architect & Engineer</p>
+      <div className="container" style={{ whiteSpace: 'pre-line' }}>
+        {group}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default GroupCard;
+export default GroupCard
