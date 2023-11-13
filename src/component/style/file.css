@@ -8,12 +8,9 @@ button {
   background-color: blue;
 }
 
-body {
-}
-
 textarea {
   height: 200px;
-  width: 200px;
+  width: 500px;
 }
 
 div {
@@ -31,10 +28,11 @@ button {
 
 .container-card {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  margin: 10px;
-  background-color: aqua;
+
+  /* background-color: aqua; */
+  gap: 10px;
 }
